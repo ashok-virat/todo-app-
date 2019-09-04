@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="displayBlockMobile" style="width:100%">
+          <div class="col-sm-12 p-0">
+              <nav class="navbar navbar-expand-md navbar-fixed navbar-dark  " style="background-color: black;">
+                  <a ><img src="../../assets/download.jfif" class="img"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse people-list navbar-collapse" id="navbarSupportedContent">
+                      <ul class="list">
+                       <li [routerLink]="['/event',userId]">Home</li>
+                      
+                      </ul>
+          
+                    </div>
+          
+                  </nav>
+          
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h2 class="display">Checking items off a to-do list doesn’t determine progress; focusing on your priorities is what counts</h2>
+              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                  <form class="cards">
+                    <div class="form-group">
+                      <label >event</label>
+                      <input type="email" class="form-control" name="event" [(ngModel)]="data.event" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Event">
+                    </div>
+                    <div class="form-group">
+                      <label>Done</label>
+                      <input type="text" class="form-control"  name="Done" [(ngModel)]="data.Done" id="exampleInputPassword1" placeholder="Done">
+                    </div>
+                    <p class="loader" *ngIf="editloader==false"></p>
+                    <button type="submit" class="btn btn-primary" (click)="edit()">Edit</button>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  
+                </div>
+              </div>
+            </div>
+      
+            <div class="container-fluid footer">
+              <div class="row" >
+                <div class="footer-main-div">
+                  <div class="footer-social-icons">
+                    <ul>
+                        <p>Follow me</p>
+                    <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <p>aruashok17@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>

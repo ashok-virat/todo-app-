@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="displayBlockMobile" style="width:100%">
+          <div class="col-sm-12 p-0">
+              <nav class="navbar navbar-expand-md navbar-fixed navbar-dark  " style="background-color: black;">
+                  <a ><img src="../../assets/download.jfif" class="img"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse people-list navbar-collapse" id="navbarSupportedContent">
+                      <ul class="list">
+                        <li [routerLink]="['/event',userId]">home</li>
+                        <li [routerLink]="['/createevent',userId]">createevent</li>
+                        <li [routerLink]="['/friend-request',userId]">friend-request</li>
+                        <li  [routerLink]="['/friends',userId]" >firend-list</li>
+                        <li [routerLink]="['/signin']">logout</li>
+                      
+                      </ul>
+          
+                    </div>
+          
+                  </nav>
+          
+              </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h2 class="display">How many slams in an old screen door? Depends how loud you shut it. How many slices in a bread? Depends how thin you cut it. How much good inside a day? Depends how good you live ’em. How much love inside a friend? Depends how much you give ’em</h2>
+              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                          <h1 class="header">users</h1>
+                            <div class="row center">
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <table class="table table-borderless">
+                                    <thead>
+                                      <tr>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr *ngFor="let datas of data">
+                                      
+                                        <td *ngIf="datas.userId !=userId"><p>{{datas.firstName}} {{datas.lastName}}</p></td>
+                                        <td  *ngIf="datas.userId !=userId"><a class="request" style="color:black;" (click)="sendrequest(datas.userId)">add friend</a></td>
+                                    
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </table>
+                              </div>
+                                  </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+              
+                <div class="container-fluid footer">
+                    <div class="row" >
+                      <div class="footer-main-div">
+                        <div class="footer-social-icons">
+                          <ul>
+                              <p>Follow me</p>
+                          <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+                          </ul>
+                          <p>aruashok17@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 

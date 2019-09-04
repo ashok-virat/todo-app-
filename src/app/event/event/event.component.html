@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="displayBlockMobile" style="width:100%">
+          <div class="col-sm-12 p-0">
+              <nav class="navbar navbar-expand-md navbar-fixed navbar-dark  " style="background-color: black;">
+                  <a><img src="./../../../assets/download.jfif" class="img"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse people-list navbar-collapse" id="navbarSupportedContent">
+                      <ul class="list">
+                      <li [routerLink]="['/createevent',userId]">createtodo</li>
+                      <li [routerLink]="['/users',userId]">users</li>
+                      <li [routerLink]="['/friend-request',userId]">friend-request</li>
+                      <li  [routerLink]="['/friends',userId]" >firend-list</li>
+                      <li [routerLink]="['/signin']" (click)="logout()">logout</li>
+                    </ul>
+          
+                    </div>
+          
+                  </nav>
+          
+              </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h2 class="display">Rename your “To-Do” list to your “Opportunities” list. Each day is a treasure chest filled with limitless opportunities; take joy in checking many off your list</h2>
+              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="header">{{this.fullname}} TODO</h1>
+                        <p *ngIf="reqcount>0">{{reqcount}} friend request</p>
+                        <div class="row" *ngIf="length>0">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <table class="table table-borderless">
+                                <thead>
+                                  <tr>
+                                    
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Event</th>
+                                    <th scope="col">Done</th>
+                                    <th scope="col">delete</th>
+                                    <th scope="col">edit</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let datas of data">
+                                    
+                                    <td>{{datas.createdOn | date}}</td>
+                                    <td>{{datas.event | uppercase}}</td>
+                                    <td>{{datas.Done}}</td>
+                                    <td><a class="delete" style="color:white"(click)="delete(datas.statusId)">delete</a></td>
+                                    <td><a class="edit" style="color:white" [routerLink]="['/edit',datas.statusId]">edit</a></td>
+
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </table>
+                          </div>
+                              </div>
+                    </div>
+                </div>
+            </div>
+        

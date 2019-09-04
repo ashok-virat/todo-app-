@@ -1,0 +1,79 @@
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="displayBlockMobile" style="width:100%;">
+          <div class="col-sm-12 p-0">
+              <nav class="navbar navbar-expand-md navbar-fixed navbar-dark  " style="background-color: black;">
+                  <a  [routerLink]="['/story']"><img src="./../../../assets/download.jfif" class="img"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse people-list navbar-collapse" id="navbarSupportedContent">
+                      <ul class="list">
+                       <li [routerLink]="['/signup']">signup</li>
+                      
+                      </ul>
+          
+                    </div>
+          
+                  </nav>
+          
+              </div>
+            </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+  
+      </div>
+      <div class="col-md-4 form">
+          <form #createform="ngForm" class="cards">
+              <div class="form-group">
+                <label for="inputAddress">Email</label>
+                <input type="text" class="form-control" name="email" [(ngModel)]="email" #emailfield="ngModel"  id="inputAddress" placeholder="Email" required>
+                <div class="alert alert-danger" [hidden]="emailfield.valid || emailfield.pristine">please fill the email field</div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Password</label>
+                <input type="password" class="form-control" id="my-input" name="password" [(ngModel)]="password" #passwordfield="ngModel" id="inputAddress2" placeholder="password" required>
+        
+                <div  class="alert alert-danger" [hidden]="passwordfield.valid || passwordfield.pristine">please fill the password field</div>
+              </div>
+              <p class="loader" *ngIf="signinloader==false"></p>
+              <button  type="submit" (click)="signin()" [disabled]="!createform.valid" class="btn btn-secondary">Signin</button>
+                  <div>
+                    <hr>
+                    <p class="footer-link" [routerLink]="['/resetpassword']">Reset Password</p>
+                  </div>
+                  
+                 
+            </form>
+            
+      </div>
+  
+      <div class="col-md-4">
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <!--footer-->
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="footer-main-div">
+        <div class="footer-social-icons">
+          <ul>
+              <p>Follow me</p>
+          <li><a href="https://twitter.com/Ashok82652056" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/__ashokvirat__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/bejo.carter" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://github.com/ashok-virat" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p>aruashok17@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

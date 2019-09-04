@@ -1,0 +1,168 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+  .form {
+    margin-top:130px;
+  }
+ 
+  .cards {
+   padding:20px;
+  
+   border-radius:20px;
+   color:black;
+   box-shadow:0px 0px 20px;
+  }
+  .btn-secondary {
+   border:1px solid blue;
+   color:blue;
+   background-color:white;
+   margin-right:auto;
+   margin-left:auto;
+   width:100%;
+  }
+  .btn-secondary:hover {
+   color:white;
+   background-color:blue;
+  }
+  small {
+   padding:10px;
+  }
+  button {
+   margin:10px;
+  }
+  .people-list ul {
+    color:white;
+   width:100%;
+   text-align:right;
+   margin-top:15px;
+  }
+  .people-list ul li {
+   padding:0px 20px 0px 20px;
+   display:inline-block;
+   transition:1s;
+   font-family: 'Times New Roman', Times, serif;
+   text-transform:uppercase;
+   cursor:pointer;
+   margin:0px 10px 0px 10px;
+   padding:10px;
+   border-radius:10px;
+
+  }
+  .people-list ul li:hover {
+  color:grey;
+  }
+  .active {
+   color:rgb(177, 177, 241);
+  }
+  @media only screen and (max-width:768px) {
+   .people-list ul {
+     width:100%;
+     text-align:center;;
+   }
+   .people-list ul li {
+      padding:10px;
+       display: block;
+       transition:0s;
+       margin:10px;
+   }
+   .people-list ul li:hover {
+       background-color:rgb(29, 28, 28);
+       padding:10px;
+       color:white;
+       text-decoration:none;
+   }
+   
+  }
+  img {
+   width:100px;
+  }
+  .header {
+    color:black;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:20px;
+    margin-top:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+  }
+
+  .lists{
+    text-align:center;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .list-group a {
+    color:grey;
+  }
+  .table {
+    border-radius:10px;
+    text-align:center;
+    margin-top:20px;
+  }
+        
+   td {
+     padding:20px;
+     text-transform: uppercase;
+     font-style:bold;
+     font-weight:600;
+   }
+   thead tr th {
+    text-transform: uppercase;
+    font-size:20px;
+    color:rgb(173, 98, 167);;
+   }
+  
+   .delete{
+     text-transform: uppercase;
+     font-style: italic;
+     font-size:12px;
+     cursor: pointer;
+     font-weight:600;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: red;
+     padding:5px;
+     border-radius:30px;
+   }
+   .delete:hover {
+     background-color:rgb(172, 9, 9);
+   }
+   .edit{
+    text-transform: uppercase;
+    font-size:12px;
+    font-style: italic;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:600;
+    text-decoration:none;
+    background-color:green;
+    padding:5px;
+     border-radius:30px;
+  }
+  .edit:hover {
+    background-color:rgb(46, 104, 23);
+  }
+
+  p {
+   text-align: center;
+    color:red;
+    font-family: monospace;
+    font-size:14px;
+ }
+ .display {
+   color:blue;
+   text-align: center;
+   text-transform:capitalize;
+   font-size:20px;
+ }
+ .jumbotron-fluid {
+   margin-top:20px;
+   border-radius:20px;
+   background:white;
+   box-shadow:0px 0px 5px black;
+ }
+ 
+ .footer {
+  margin-top:10px;
+ width:100%;
+
+}
