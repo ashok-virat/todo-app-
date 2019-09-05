@@ -1356,7 +1356,7 @@ var ServiceService = /** @class */ (function () {
             var datas = _this.http.post(_this.baseurl + "/savehistory", params);
             return datas;
         };
-        this.baseurl = 'http://localhost:4001/api/v1/users';
+        this.baseurl = '/api/v1/users';
     }
     ServiceService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
@@ -1503,7 +1503,7 @@ var SocketserviceService = /** @class */ (function () {
             });
             return ak;
         };
-        this.baseUrl = 'http://localhost:4001';
+        this.baseUrl = 'http://13.233.103.6:4001';
         this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3___default()(this.baseUrl);
     }
     SocketserviceService.ctorParameters = function () { return [

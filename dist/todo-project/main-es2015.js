@@ -1295,7 +1295,7 @@ let ServiceService = class ServiceService {
             let datas = this.http.post(`${this.baseurl}/savehistory`, params);
             return datas;
         };
-        this.baseurl = 'http://localhost:4001/api/v1/users';
+        this.baseurl = '/api/v1/users';
     }
 };
 ServiceService.ctorParameters = () => [
@@ -1440,7 +1440,7 @@ let SocketserviceService = class SocketserviceService {
             });
             return ak;
         };
-        this.baseUrl = 'http://localhost:4001';
+        this.baseUrl = 'http://13.233.103.6:4001';
         this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3___default()(this.baseUrl);
     }
 };
