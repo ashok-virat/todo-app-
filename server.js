@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const publicPath = path.join(__dirname, '..', 'dist/todo-project');
+const publicPath = path.join(__dirname, '..', 'todo-app-/dist/todo-project');
 const proxy = require('http-proxy-middleware');
 
 /**
