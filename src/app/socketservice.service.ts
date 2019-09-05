@@ -16,7 +16,7 @@ export class SocketserviceService {
         
   constructor(public toastr: ToastrService,public service:ServiceService) { 
    
-    this.baseUrl='http://localhost:4001';
+    this.baseUrl='http://13.233.103.6:4001';
        this.socket=io(this.baseUrl);
   } 
 

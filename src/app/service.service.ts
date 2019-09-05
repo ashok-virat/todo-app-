@@ -9,7 +9,7 @@ export class ServiceService {
   baseurl: string;
 
   constructor(public http:HttpClient) {
-    this.baseurl='http://localhost:4001/api/v1/users';
+    this.baseurl='/api/v1/users';
    }
    public signup=(data):any=>{
      let params=new HttpParams()
