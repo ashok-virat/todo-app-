@@ -1,6 +1,6 @@
 # siteLink
 
-ec2-instance:http://ec2-13-233-103-6.ap-south-1.compute.amazonaws.com/
+http://ec2-13-233-103-6.ap-south-1.compute.amazonaws.com/
 
 # TodoProject
 
